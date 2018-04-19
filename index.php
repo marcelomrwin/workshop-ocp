@@ -1,9 +1,6 @@
 <?php
 echo "<h1>Openshift Workshop v2.0</h1> ";
 echo $_SERVER['SERVER_ADDR'];
-echo $_ENV['mysql_db'];
-echo $_ENV['mysql_user'];
-echo $_ENV['mysql_pass'];
 echo "<br><hr>";
 echo "<h2>Cidades cadastradas no Banco de Dados:</h2>";
 $conn = new mysqli("mysql", $_ENV['mysql_user'], $_ENV['mysql_pass'], $_ENV['mysql_db']);
